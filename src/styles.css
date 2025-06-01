@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-toolbar {
+  width: 100vh;
+  min-height: 64px; /* default Material height */
+  height: 64px;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow: hidden;  /* avoids doubling in height */
+  position: fixed; 
+  z-index: 1;
+}

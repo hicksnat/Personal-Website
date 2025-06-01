@@ -1,0 +1,39 @@
+.page-div {
+    display: flex;
+}
+
+.text-box {
+    margin-top: 3vw;
+    margin-left: 6vw;
+    max-width: 57vw;
+    padding-top: 10vh;
+}
+
+.about-paragraph-body {
+    line-height: 1.8;
+    text-indent: 2em;
+    margin-left: 1rem;
+}
+
+.image-crop-wrapper {
+  position: fixed;
+  top: 64px;                            /* below the toolbar */
+  right: 0;
+  width: 28vw;                          /* 👈 25% of the viewport width */
+  height: calc(100vh - 64px);          /* fills the screen below the navbar */
+  z-index: -1;
+}
+
+.banner-pic {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  display: block;
+  object-fit: cover;
+  box-shadow: -20px 0 30px rgba(0, 0, 0, 0.3);
+  right: 0;
+
+  /* Lock size boundaries */
+  min-width: 28vw;     /* don't shrink below this */
+  max-width: 28vw;    /* don't grow beyond this */
+}
